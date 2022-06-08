@@ -1,0 +1,27 @@
+.icone-cards {
+  width: 50px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.products-cards {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 25px darkgrey;
+  text-align: center;
+  margin: 50px;
+  padding: 15px;
+}
+
+.products-cards ul li {
+  text-align: left;
+}
