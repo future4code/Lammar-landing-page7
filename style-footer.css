@@ -2,14 +2,16 @@
     padding: 0;
     margin: 0;
     color: white;
+    
 }
 footer{
     bottom: 0;
-    background-color: black;
+    background-color:black;
    
 }
 footer h2{
     padding-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .footer-superior{
     display: grid;
@@ -29,15 +31,30 @@ footer h2{
    padding: 0 10px 0 10px;
 }
 .logo img{
-    margin-left: 40px;
-    width: 150px;
+    margin-left: 10%;
+   width: 150px;
     border-radius: 100%;
+   
     
 }
 .links-sociais img{
     width: 60px;
 }
+.links-sociais img:hover{
+    background-color:#d2c3b1;
+    border-radius: 100%;
+    /* border-bottom: 2px solid #d2c3b1 ; */
+    
+}
 
 .baixe-o-app a{
     margin-right: 20px;
+}
+.fale-conosco a{
+    font-size: larger;
+    text-decoration: none;
+}
+.fale-conosco a:hover{
+    color:#d2c3b1;
+    border-bottom: 1px solid #d2c3b1 ;
 }
