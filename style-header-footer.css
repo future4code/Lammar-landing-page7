@@ -1,0 +1,83 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+   
+}
+
+footer{
+    bottom: 0;
+    background-color:#1f1f24;
+   
+}
+footer h2{
+    padding-bottom: 20px;
+    
+}
+.footer-superior{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 15px;
+}
+.footer-inferior{
+    padding: 15px;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-inferior p{
+   padding: 0 10px 0 10px;
+}
+.logo img{
+    margin-left: 10%;
+   width: 150px;
+    border-radius: 100%;
+   
+    
+}
+.links-sociais img{
+    width: 60px;
+}
+.facebook img:hover{
+    background-color: #4267B2;
+    border-radius: 20%;
+  
+}
+.instagram img:hover{
+    background-color: #E1306C;
+    border-radius: 20%;
+}
+.twitter img:hover{
+    background-color: #1DA1F2;
+    border-radius: 20%;
+}
+.youtube img:hover{
+    background-color: #FF0000;
+    border-radius: 20%;
+}
+.linkedin img:hover{
+    background-color: #0A66C2;
+    border-radius: 20%;
+}
+/* .links-sociais  img:hover{
+    background-color:#1f1f24; 
+     border-radius: 100%; */
+    /* border-bottom: 2px solid #d2c3b1 ; */
+    
+.baixe-o-app a{
+    margin-right: 20px;
+}
+.fale-conosco a{
+    font-size: larger;
+    text-decoration: none;
+}
+.fale-conosco a:hover{
+    color:#d2c3b1;
+    border-bottom: 1px solid #d2c3b1 ;
+}
