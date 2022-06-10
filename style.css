@@ -1,0 +1,51 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.icone-cards {
+  width: 80px;
+}
+
+.main-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  align-items: center;
+}
+
+.products-cards {
+  font-size: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 25px darkgray;
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+}
+
+.products-cards ul li {
+  text-align: left;
+  padding: 5px;
+}
+
+a button {
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  border: none;
+  background-color: #d2c3b1;
+  color: #1f1f24;
+  cursor: pointer;
+}
+
+a button:hover {
+  background-color: #e6d1b6;
+  color: white;
+}
+
