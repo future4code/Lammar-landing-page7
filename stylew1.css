@@ -1,0 +1,36 @@
+*{
+    background-color:#d2c3b1 ;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box{
+    
+    float: left;
+    background-color: whitesmoke;
+    border: 1px  solid black;
+    width:auto;
+	height:auto;
+	border-radius: 10px;
+}
+
+.p{
+    background: whitesmoke;
+    text-align: center;
+}
+.h1{
+    text-align: center;
+}
+.h2{
+    text-align: center;
+}
+.pergunta{
+    cursor: pointer;
+    
+}
+.nivel1{
+    cursor:pointer;
+}
+.lista{
+    display: none
+}
