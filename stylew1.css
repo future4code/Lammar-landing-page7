@@ -1,14 +1,49 @@
 *{
-    background-color:#d2c3b1 ;
+    background-color:white ;
     font-family: 'Roboto', sans-serif;
 
+
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+}
+.h2{
+    text-align: center;
+    }
+.apresentacao{
+    display: flex;
+    border-color: black;
+
+}
+.apresentacao{
+    display:flex;
+    justify-content: space-between;
 }
 
-.box{
-    
+.mulher img{
+    width: 200px;
+
+}
+.box-apresentacao{
+    background-color: transparent;
+    border: 2px  solid black;
+    /* width:auto;
+	height:auto; */
+	border-radius: 10px;
+    text-align: justify;
+}
+
+.homem img{
+    width: 200px;
+    float:right;
+}
+
+.box-diferencial{
     float: left;
-    background-color: whitesmoke;
-    border: 1px  solid black;
+    background-color: transparent;
+    border: 2px  solid black;
     width:auto;
 	height:auto;
 	border-radius: 10px;
@@ -26,11 +61,21 @@
 }
 .pergunta{
     cursor: pointer;
-    
+    }
+
+.resposta { 
+    display: none 
 }
-.nivel1{
-    cursor:pointer;
+
+.pergunta label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%,
+  input,
 }
-.lista{
-    display: none
+.pergunta input:checked ~ 
+.resposta {
+  display: block;
 }
+
