@@ -1,64 +1,62 @@
 *{
-    background-color:white ;
     font-family: 'Roboto', sans-serif;
-
-
 }
 main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5,1fr);
 }
-.h2{
-    text-align: center;
-    }
-.apresentacao{
-    display: flex;
-    border-color: black;
 
+.h2{
+
+text-align: center;
 }
+
 .apresentacao{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.box-apresentacao{
+
+    background-color: #d2c3b1;
+    border: 2px  solid black;
+    max-width:auto;
+	max-height: auto; 
+	border-radius: 10px;
+    text-align: justify;
+    padding: 10px;
+    margin-top:50px ;
+    margin-bottom: 90px;
 }
 
 .mulher img{
-    width: 200px;
-
-}
-.box-apresentacao{
-    background-color: transparent;
-    border: 2px  solid black;
-    /* width:auto;
-	height:auto; */
-	border-radius: 10px;
-    text-align: justify;
+    max-width: 200px;
+    float: left;
+    vertical-align: baseline;
 }
 
 .homem img{
     width: 200px;
     float:right;
+    background-image:#d2c3b1;
+    vertical-align: baseline;
+    
 }
 
 .box-diferencial{
-    float: left;
-    background-color: transparent;
+    float: center;
+    background-color: #d2c3b1;
     border: 2px  solid black;
-    width:auto;
-	height:auto;
+    max-width:auto;
+	max-height: auto;
+    text-align: justify;
 	border-radius: 10px;
+    padding: 10px;
 }
 
-.p{
-    background: whitesmoke;
-    text-align: center;
-}
 .h1{
     text-align: center;
+
 }
-.h2{
-    text-align: center;
-}
+
 .pergunta{
     cursor: pointer;
     }
