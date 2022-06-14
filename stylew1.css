@@ -1,0 +1,83 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    background-color: #1f1f24;
+    background-size: auto;
+    color: #d2c3b1;
+    margin: 2%;
+}
+
+.apresentacao {
+    display: inline-flex;
+    align-items: bottom;
+}
+
+.box-apresentacao {
+    align-self: flex-start;
+    background-color: #d2c3b1;
+    border: 2px solid black;
+    max-width: auto;
+    max-height: auto;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 10px;
+    margin-block-start: 5%;
+
+}
+
+.mulher img {
+    max-width: 200px;
+    float: left;
+    vertical-align: text-bottom;
+}
+
+.diferencial {
+    display: inline-flex;
+    align-items: bottom;
+}
+
+.box-diferencial {
+    align-self: flex-start;
+    background-color: #d2c3b1;
+    border: 2px solid black;
+    max-width: auto;
+    max-height: auto;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 10px;
+
+}
+
+.homem img {
+    width: 200px;
+    float: left;
+    background-image: #d2c3b1;
+    vertical-align: baseline;
+
+}
+
+.pergunta {
+    cursor: pointer;
+}
+
+.resposta {
+    display: none
+}
+
+.pergunta label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%,
+    
+}
+
+.pergunta input:checked~.resposta {
+    display: block;
+}
