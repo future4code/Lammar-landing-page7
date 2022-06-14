@@ -4,8 +4,7 @@
     margin: 0;
     color: white;
     font-family: 'Roboto', sans-serif;
-    
-   
+
 }
 /* ---------------------Header---------------------- */
 header{
@@ -94,7 +93,7 @@ header{
     
 }
 fieldset{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 20px;
 
 }
@@ -102,11 +101,27 @@ input{
     margin-bottom: 20px;
     padding-bottom: 30px;
 }
+
+ 
 .dados{
-    width: 100%;
+    width: 50%;
 }
+.button-formulario{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #0A66C2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 
-
+}
+.button-formulario:hover{
+background-color: #44c08a;
+ 
+ 
+}
 /* ---------------------Footer------------------------------- */
 footer{
     bottom: 0;
@@ -125,6 +140,7 @@ footer h2{
     grid-template-rows: 1fr;
     gap: 10px;
     padding: 15px;
+   
 }
 .footer-inferior{
     padding: 15px;
@@ -195,6 +211,11 @@ footer h2{
     text-decoration: none;
 }
 .fale-conosco a:hover{
+    color:#d2c3b1;
+    border-bottom: 1px solid #d2c3b1 ;
+    transition: 0.5s;
+}
+.footer-inferior a:hover{
     color:#d2c3b1;
     border-bottom: 1px solid #d2c3b1 ;
     transition: 0.5s;
