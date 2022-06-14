@@ -7,6 +7,7 @@
     
    
 }
+/* ---------------------Header---------------------- */
 header{
     top: 0;
     background-color:black;
@@ -39,6 +40,7 @@ header{
 
 }
 .criar-conta button{
+    font-weight: bold;
     display: inline-block;
     color: #1f1f24;
     margin-right: 15px;
@@ -54,20 +56,61 @@ header{
  /* A paleta de cor e feia de peste, jesus. Areia com cinza? Um crime*/
 
 .criar-conta button:hover{
-    color: white;
+    color: black;
     animation: pulsate 1s ease-in-out;
     
 }
 @keyframes pulsate{
     0%{
-      box-shadow: 0 0 25px #d2c3b1;
-      box-shadow: 0 0 25px #d2c3b1;
+      box-shadow: 0 0 25px white;
+      box-shadow: 0 0 25px white;
     }
 }
+/* -------------------------Produtos------------------------- */
+.produtos{
+    background-color: #1f1f24;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-items:center;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center; */
+}
+.produtos-apresentacao{
+    text-align: justify;
+    padding-top: 100px;
+    padding-left: 150px;
+
+}
+
+.foguete{
+    width: 50px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.imagem-apresentacao img{
+    width: 600px;
+    
+}
+fieldset{
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+input{
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+.dados{
+    width: 100%;
+}
+
+
 /* ---------------------Footer------------------------------- */
 footer{
     bottom: 0;
-    background-color:#1f1f24;
+    background-color:black;
    
 }
 
@@ -87,7 +130,15 @@ footer h2{
     padding: 15px;
     border-top: 1px solid white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
+    text-align: center;
+    align-items:center ;
+}
+.linkedin-footer-inferior p{
+    margin-bottom: 10px;
+}
+.linkedin-footer-inferior a{
+    text-decoration: none;
 }
 .footer-inferior p{
    padding: 0 10px 0 10px;
