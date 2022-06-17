@@ -2,45 +2,90 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+}
+p {
+  font-size: 20px;
+}
+
+/*-------------------- Reponsividade-------------- */
+@media (max-device-width: 1300px) {
+  /* celulares */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  p{
-    font-size: 20px;
+
+  footer {
+    flex-direction: column;
   }
+  footer .footer-superior {
+    color: white;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  main .main-cards {
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main .produtos {
+    display: inline-flex;
+    justify-items: center;
+    color: black;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  main .imagem-apresentacao img {
+    width: 100%;
+  }
+  main .produtos-apresentacao {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+
 /* ---------------------Header---------------------- */
-header{
+header {
   top: 0;
-  background-color:#1f1f24;
+  background-color: #1f1f24;
   display: flex;
   align-items: center;
   box-sizing: border-box;
   justify-content: space-around;
- 
 }
-.logo-header img{
+.logo-header img {
   padding: 10px;
-  margin-left: 10%;
-  width: 130px;
-   border-radius: 100%;
+  margin: 10%;
+  width: 100px;
+  border-radius: 100%;
+  border: 1px solid #d2c3b1;
 }
-.header-nav{
+.header-nav {
   display: inline-block;
   padding: 20px;
- 
 }
-.header-nav a{
+.header-nav a {
   color: white;
   text-decoration: none;
   padding: 20px;
   font-size: 35px;
   border-radius: 10px;
-  
 }
-.header-nav a:hover{
+.header-nav a:hover {
   transition: 0.5s;
- color: #d2c3b1;
-
+  color: #d2c3b1;
 }
-.buttons-geral button{
+.buttons-geral button {
   font-weight: bold;
   display: inline-block;
   color: #1f1f24;
@@ -49,20 +94,18 @@ header{
   height: 50px;
   font-size: larger;
   background-color: #d2c3b1;
-  font-family:'Roboto', sans-serif;
- border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
   cursor: pointer;
   border: 3px solid #1f1f24;
 }
-/* A paleta de cor e feia de peste, jesus. Areia com cinza? Um crime*/
 
-.buttons-geral button:hover{
+.buttons-geral button:hover {
   color: black;
   animation: pulsate 1s ease-in-out;
-  
 }
-@keyframes pulsate{
-  0%{
+@keyframes pulsate {
+  0% {
     box-shadow: 0 0 25px white;
     box-shadow: 0 0 25px white;
   }
@@ -72,49 +115,50 @@ header{
 
 .div-img-home {
   display: flex;
-  /* background-image: url(./img/img-home2.jpeg);  
-  background-repeat: no-repeat; */
+  flex-direction: column;
   width: auto;
   height: auto;
-  display: flex;
   align-items: center;
-  justify-content: space-between;  
-  background-color: black;  
- 
+  justify-content: space-between;
+  background-color: black;
+}
+.div-img-home img {
+  display: flex;
+  width: 80vw;
+  height: 40vw;
 }
 .div-img-home h1 {
-  margin: 20px;
+  margin: 1vh;
   color: white;
-  margin-left: 20px;
-  text-align: justify;
+  margin-left: 2%;
+  text-align: center;
   font-size: 35px;
- 
 }
 
 .text-home h2 {
   text-align: center;
   align-items: center;
   font-size: 45px;
-  display: grid;
   padding-left: 20px;
   color: white;
-  
 }
 
 .text-home {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin: 200px 400px 100px 0px;
-  padding: 60px 0 60px 0;
-  background-color:#1f1f24 ;
-  
+  align-self: flex-start;
+  background-color: #d2c3b1;
+  border: 2px solid black;
+  max-width: auto;
+  max-height: auto;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
+  margin-block-start: 5%;
 }
 
 .text-home-end h2 {
   text-align: center;
   align-items: center;
   font-size: 45px;
-  display: grid;
   padding-left: 60px;
   color: white;
   display: block;
@@ -124,15 +168,17 @@ span {
 }
 
 .text-home-end {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin: 100px 0 100px 400px;
-  padding: 60px 0 60px 0;
-  background-color:#1f1f24 ;
-
+  align-self: flex-start;
+  background-color: #d2c3b1;
+  border: 2px solid black;
+  max-width: auto;
+  max-height: auto;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
+  margin-block-start: 5%;
 }
 
-/* style cards */
 .icone-cards {
   width: 80px;
 }
@@ -158,7 +204,7 @@ span {
   margin: 50px;
   padding: 30px;
   width: 80%;
-  height: 60%px;
+  height: 80%;
 }
 .products-cards:hover {
   box-shadow: 2px 2px 25px darkgray;
@@ -193,93 +239,77 @@ a button:hover {
   color: white;
 }
 /* -----------------------Produtos---------------------------- */
-.produtos{
- display: grid;
- grid-template-columns: 1fr 1fr;
- justify-items:center;
- color: black;
-  /* display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center; */
+
+.produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  color: black;
 }
-.produtos-apresentacao{
+.produtos-apresentacao {
   text-align: justify;
   padding-top: 100px;
   padding-left: 150px;
-
 }
-.produtos-apresentacao p{
-  color: black;  
+.produtos-apresentacao p {
+  color: black;
 }
 
-.foguete{
+.foguete {
   width: 50px;
   padding-top: 10px;
   padding-left: 20px;
 }
-.imagem-apresentacao img{
+.imagem-apresentacao img {
   width: 600px;
-  
 }
-fieldset{
+fieldset {
   margin-bottom: 40px;
   padding: 20px;
-
 }
-input{
+input {
   margin-bottom: 20px;
   padding-bottom: 30px;
 }
 
-
-.dados{
+.dados {
   width: 50%;
 }
-.button-formulario{
+.button-formulario {
   position: relative;
   width: 120px;
   height: 40px;
   font-size: 20px;
-  background-color: #0A66C2;
+  background-color: #0a66c2;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
 }
-.button-formulario:hover{
-background-color: #44c08a;
-
-
+.button-formulario:hover {
+  background-color: #44c08a;
 }
 /* --------------------FAQ e Sobre----------------------------------- */
-.main-faq{
+.main-faq {
   color: black;
-  padding: 30px;
-  margin: 30px;
+  padding: 1%;
+  margin: 2%;
   align-items: center;
   text-align: justify;
 }
 
-  .faq > h1,h2 {
-    background-color: #1f1f24;
-    background-size: auto;
-    color: #d2c3b1;
-    margin: 2%;
-    padding: 10px;
-    border-radius: 5px;
-  } 
-
-
- /* h2 {
-  background-color:#1f1f24;
+.faq > h1,
+h2 {
+  background-color: #1f1f24;
   background-size: auto;
-  border-radius: 5px;
-  color: white;
+  color: #d2c3b1;
   margin: 2%;
   padding: 10px;
-} */
-
+  border-radius: 5px;
+}
+.titulo h1 {
+  padding-top: 2%;
+  text-align: center;
+}
 .apresentacao {
   display: inline-flex;
   align-items: bottom;
@@ -295,7 +325,6 @@ background-color: #44c08a;
   text-align: justify;
   padding: 10px;
   margin-block-start: 5%;
-
 }
 
 .mulher img {
@@ -319,7 +348,6 @@ background-color: #44c08a;
   text-align: justify;
   padding: 10px;
   margin-top: 2%;
-
 }
 
 .homem img {
@@ -327,15 +355,10 @@ background-color: #44c08a;
   float: left;
   background-image: #d2c3b1;
   vertical-align: baseline;
-
 }
 
-/* .pergunta {
-  /* cursor: pointer; */
-/* } */ 
-
 .resposta {
-  display: none
+  display: none;
 }
 
 .pergunta label {
@@ -343,114 +366,113 @@ background-color: #44c08a;
   font-weight: bold;
   margin-bottom: 5px;
   width: 100%,
-  
+  /* o Width precisa estar com virgula simples no fim para funcionar, o pq? nao sabemos. Favor nao desformatar :) */
 }
 
-.pergunta input:checked~.resposta {
+.pergunta input:checked ~ .resposta {
   display: block;
-
 }
 
 /* ---------------------Footer------------------------------- */
-footer{
+footer {
   bottom: 0;
-  background-color:#1f1f24;
- 
+  background-color: #1f1f24;
 }
 
-footer h2{
+footer h2 {
   padding-bottom: 20px;
-  
 }
-.footer-superior{
+.footer-superior {
   color: white;
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 10px;
   padding: 15px;
- 
 }
-.footer-inferior{
+.logo-footer img {
+  margin-left: 10%;
+  width: 150px;
+  border-radius: 100%;
+  border: 1px solid #d2c3b1;
+}
+.footer-inferior {
   padding: 15px;
   border-top: 1px solid white;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   text-align: center;
-  align-items:center ;
+  align-items: center;
 }
-.linkedin-footer-inferior p{
+.linkedin-footer-inferior p {
   margin-bottom: 10px;
 }
-.linkedin-footer-inferior a{
+.linkedin-footer-inferior a {
   text-decoration: none;
 }
-.footer-inferior p{
- padding: 0 10px 0 10px;
+.footer-inferior p {
+  padding: 0 10px 0 10px;
 }
-.logo-footer img{
-  margin-left: 10%;
- width: 150px;
-  border-radius: 100%;
- 
-}
-.links-sociais img{
+
+.links-sociais img {
   width: 60px;
 }
-.facebook img:hover{
-  background-color: #4267B2;
-  border-radius: 20%;
-  transition: 0.5s;
-
-}
-.instagram img:hover{
-  background-color: #E1306C;
+.facebook img:hover {
+  background-color: #4267b2;
   border-radius: 20%;
   transition: 0.5s;
 }
-.twitter img:hover{
-  background-color: #1DA1F2;
+.instagram img:hover {
+  background-color: #e1306c;
   border-radius: 20%;
   transition: 0.5s;
 }
-.youtube img:hover{
-  background-color: #FF0000;
+.twitter img:hover {
+  background-color: #1da1f2;
   border-radius: 20%;
   transition: 0.5s;
 }
-.linkedin img:hover{
-  background-color: #0A66C2;
+.youtube img:hover {
+  background-color: #ff0000;
   border-radius: 20%;
   transition: 0.5s;
 }
-/* .links-sociais  img:hover{
-  background-color:#1f1f24; 
-   border-radius: 100%; */
-  /* border-bottom: 2px solid #d2c3b1 ; */
-  
-.baixe-o-app a{
+.linkedin img:hover {
+  background-color: #0a66c2;
+  border-radius: 20%;
+  transition: 0.5s;
+}
+.baixe-o-app {
+  align-items: center;
+}
+.baixe-o-app a {
   margin-right: 20px;
 }
-.baixe-o-app a:hover{
+.baixe-o-app a img {
+  align-items: center;
+}
+.baixe-o-app a:hover {
   opacity: 40%;
   transition: 0.5s;
 }
-.fale-conosco a{
+.fale-conosco a {
   color: white;
   font-size: larger;
   text-decoration: none;
 }
-.fale-conosco a:hover{
-  color:#d2c3b1;
-  border-bottom: 1px solid #d2c3b1 ;
+.fale-conosco a:hover {
+  color: #d2c3b1;
+  border-bottom: 1px solid #d2c3b1;
   transition: 0.5s;
 }
-.footer-inferior a:hover{
-  color:#d2c3b1;
-  border-bottom: 1px solid #d2c3b1 ;
+.footer-inferior a:hover {
+  color: #d2c3b1;
+  border-bottom: 1px solid #d2c3b1;
   transition: 0.5s;
 }
-.footer-inferior p,a{
+.footer-inferior p,
+a {
   color: white;
 }
+/* -----------------FIM------------------------------------ */
